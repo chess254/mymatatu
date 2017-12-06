@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:id="@+id/my_id0">
+        <item
+            android:id="@+id/home_menu"
+            android:title="Search Matatus"
+            android:icon="@drawable/searchmatatu_navicon"
+            />
+        </group>
+        <group android:id="@+id/my_id1">
+                <item
+                    android:id="@+id/booking_history_menu"
+                    android:title="My Bookings"
+                    android:icon="@drawable/booking_navicon"/>
+        </group>
+        <group android:id="@+id/my_id2">
+                <item
+                    android:id="@+id/wallet_menu"
+                    android:title="My Wallet"
+                    android:icon="@drawable/wallet_navicon"/>
+        </group>
+        <group android:id="@+id/my_id3">
+                <item
+                    android:id="@+id/synced_contacts_menu"
+                    android:title="My Synced Contacts"
+                    android:icon="@drawable/syncedcontacts_navicon"
+                    />
+        </group>
+        <group android:id="@+id/my_id4">
+        <item
+            android:id="@+id/profile_menu"
+            android:title="Profile"
+            android:icon="@drawable/profile"/>
+        </group>
+
+
+        <group android:id="@+id/my_id5">
+        <item
+            android:id="@+id/feedback_menu"
+            android:title="Feedback and Support"
+            android:icon="@drawable/feedback_navbaricon"/>
+        </group>
+        <group android:id="@+id/my_id6">
+                <item
+                    android:id="@+id/termscondition_menu"
+                    android:title="Terms and Condition"
+                    android:icon="@drawable/termsandcondition_navicon"/>
+        </group>
+        <group android:id="@+id/my_id7">
+        <item
+            android:id="@+id/help_menu"
+            android:title="Help"
+            android:icon="@drawable/help_navicon"/>
+        </group>
+        <group android:id="@+id/my_id8">
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_navicon"/>
+        </group>
+
+
+</menu>

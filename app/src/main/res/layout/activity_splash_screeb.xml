@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context="com.mymatatu.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splashheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:src="@drawable/appsplash"
+        android:textColor="#000"
+        android:text="My Matatu Counter Admin" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashheader"
+        android:layout_centerHorizontal="true">
+
+    </ProgressBar>
+
+
+    <!--<com.mymatatuadminapp.mymatatuadmin.global.view.TextViewExoSemiBold-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@id/iconnew"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="hjsakjjksajlksakf"-->
+    <!--android:layout_marginBottom="25dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--app:fontName="@string/fontfilename"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:gravity="center"/>-->
+
+</RelativeLayout>

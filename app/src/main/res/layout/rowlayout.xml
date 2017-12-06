@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/size_10"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/register_btn"
+        android:text="name"
+        app:fontName="@string/fontfilename" />
+
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/contact"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/size_10"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/register_btn"
+        android:text="contact"
+        app:fontName="@string/fontfilename" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">MyMatatu</string>
+    <string name="intro1">Welcome to My Matatu Online Booking</string>
+    <string name="intro2">49/- kshs will change your style of travel</string>
+    <string name="txt_done">Done</string>
+    <string name="txt_search">Search</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Table Clounm names -->
+    <string name="col1">Saccco Name</string>
+    <string name="col2">Vehicle No</string>
+    <string name="col3">Stage</string>
+    <string name="col4">Seat\'s Avaliable</string>
+    <string name="col5">Price</string>
+    <string name="col0">Sr.no</string>
+
+
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_contacts">The contact picker won\'t work without this permission. Are you sure you want to deny this permission?</string>
+    <string name="permission_deny">Deny</string>
+    <string name="permission_retry">Re-try</string>
+
+    <string name="wallet_add_money">1. Please Go to the Safari Com Application \n2. Add money to your wallet
+    \n3. Come Back Again</string>
+    <string name="matatu_header">Matatu Main</string>
+    <string name="country_code">+254</string>
+
+
+    <!--Fonts-->
+    <string name="fontfilename">Arctik.ttf</string>
+    <string name="fontfilename_main">fontawesome-webfont.ttf</string>
+    <string name="tillno">My Matatu App Paybill Number: 905369</string>
+
+    <string name="booking">&#xf02d;</string>
+    <string name="next_text">Next</string>
+    <string name="skip">Skip</string>
+
+
+    <string name="api_id">vivek</string>
+    <string name="api_password">123456</string>
+    <string name="paybill">My Matatu App PayBill Number: 905369</string>
+
+</resources>

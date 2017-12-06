@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/show_text_views_meduim"
+        android:text="No Internet Connection"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/title"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/nointernet" />
+    <com.mymatatu.Global.ButtonExoSemiBold
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:background="@color/buttoncol"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/show_text_views_small"
+        android:textStyle="bold"
+        android:text="Refresh"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Refill Your Wallet To Confirm the Booking"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:fontName="@string/fontfilename"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textIsSelectable="true"
+        android:text="@string/paybill"
+        app:fontName="@string/fontfilename"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/account_dialog_disp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textIsSelectable="true"
+        android:text="Account No : "
+        app:fontName="@string/fontfilename"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/amount_dialog_disp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/show_text_views_meduim"
+        android:textStyle="bold"
+        app:fontName="@string/fontfilename" />
+
+    <Button
+        android:id="@+id/button_next_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/buttoncol"
+        android:text="Done"
+        android:textColor="@color/whitetext" />
+
+
+
+
+</LinearLayout>

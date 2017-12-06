@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bb0000</color>
+    <color name="colorPrimaryDark">#9c0303</color>
+    <color name="colorAccent">#bb0000</color>
+    <color name="buttoncol">#bb0000</color>
+    <color name="logogreen">#136d12</color>
+    <color name="whitetext">#fff</color>
+    <color name="greyapp">#D2D7D3</color>
+    <color name="greydrak">#60646D</color>
+    <color name="white">#fff</color>
+    <color name="cursorgrey">#D2D7D3</color>
+    <color name="divider_color">#ececec</color>
+    <color name="drawer_item_color">#a1a1a1</color>
+    <color name="search_header">#333333</color>
+
+    <color name="darkScreenBg">#FFFFFF</color>
+    <color name="darkScreenTextColor">#FFFFFF</color>
+    <color name="brightScreenTextColor">#000000</color>
+    <color name="submit_button_text_color">#fff</color>
+    <color name="label_button_text_color">#000</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="black">#000000</color>
+    <color name="status">#0066ff</color>
+    <color name="navigationbg">#565656</color>
+    <color name="multitaskpassage">#8c8c8c</color>
+    <color name="notesColor">#0066ff</color>
+    <color name="bookmarkcolor">#FFFDF103</color>
+    <color name="searchcolor">#FFF20B1A</color>
+    <color name="lightgrey">#FFDDD9DA</color>
+    <color name="dark_grey">#8c8c8c</color>
+    <color name="edittext_color">#D2D7D3</color>
+    <color name="description_app">#a1a1a1</color>
+    <color name="global_background_color">#ECE8ED</color>
+    <color name="sacco_name_text_color">#545454</color>
+    <color name="app_main_colour">#bb0000</color>
+</resources>

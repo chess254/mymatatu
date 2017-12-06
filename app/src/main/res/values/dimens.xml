@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="splash_text_size">20sp</dimen>
+    <dimen name="tab_height_android">50dp</dimen>
+    <dimen name="text_header_country_code">20sp</dimen>
+    <dimen name="standard_margin">10dp</dimen>
+    <dimen name="standard_margin_2">8dp</dimen>
+    <dimen name="headings">24sp</dimen>
+    <dimen name="editext_height">50dp</dimen>
+    <dimen name="editext_font">14sp</dimen>
+    <dimen name="show_text_views_large">24sp</dimen>
+    <dimen name="show_text_views_meduim">16sp</dimen>
+    <dimen name="show_text_views_small">14sp</dimen>
+    <dimen name="design_navigation_icon_size">24dp</dimen>
+    <dimen name="seatheight">60dp</dimen>
+
+    <dimen name="margin_medium">16dp</dimen>
+
+    <dimen name="font_size_normal">24sp</dimen>
+    <dimen name="header_text_size">20sp</dimen>
+    <dimen name="margin_log">40dp</dimen>
+    <dimen name="navigation_title_size">20sp</dimen>
+    <dimen name="navigation_bar_height">60dp</dimen>
+    <dimen name="search_header_size">22sp</dimen>
+    <dimen name="decsription_header">16sp</dimen>
+    <dimen name="margin_app_description">30dp</dimen>
+    <dimen name="menu_header_name">22sp</dimen>
+    <dimen name="menu_header_email">14sp</dimen>
+    <dimen name="menu_header_loaction">18sp</dimen>
+    <dimen name="menu_header_padding">20dp</dimen>
+    <dimen name="header_top_main">70dp</dimen>
+    <dimen name="header_margin_bottom">24dp</dimen>
+    <dimen name="menu_cell_margin">20dp</dimen>
+    <dimen name="menu_cell_image_height">30dp</dimen>
+    <dimen name="menu_cell_text_size">16sp</dimen>
+    <dimen name="matatu_number_header">18sp</dimen>
+    <dimen name="sitter_text_size">12sp</dimen>
+    <dimen name="currency_text_size">18sp</dimen>
+    <dimen name="image_header_margin">30dp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_25">25dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="detail_matato_padding">20dp</dimen>
+    <dimen name="search_bar_text_size">18sp</dimen>
+    <dimen name="image_size_booked">34sp</dimen>
+    <dimen name="size_bookingId">18sp</dimen>
+    <dimen name="sacconamematatunme_size">16sp</dimen>
+    <dimen name="sourcedestination_size">14sp</dimen>
+    <dimen name="dateoftravelling_size">12sp</dimen>
+    <dimen name="no_booking_history">16sp</dimen>
+    <dimen name="heading">20sp</dimen>
+
+    <dimen name="margin_booking_detail">24sp</dimen>
+
+</resources>

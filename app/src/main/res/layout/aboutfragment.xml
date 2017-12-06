@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/size_10"
+            android:layout_height="wrap_content">
+            <!--<TextViewExoSemiBold-->
+                <!--android:id="@+id/aboutheading"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontName="@string/fontfilename"-->
+                <!--android:text="Terms and Conditions"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:textSize="@dimen/headings"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:textColor="@color/greydrak"/>-->
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@string/fontfilename"
+                android:textSize="@dimen/show_text_views_meduim"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

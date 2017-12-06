@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pleasepay_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayouthead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <com.mymatatu.Global.TextViewExoSemiBold
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Successful"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:textSize="@dimen/show_text_views_meduim"
+            app:fontName="@string/fontfilename" />
+    </RelativeLayout>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please Pay Ksh.49/- from your m-pesa \naccount to our Paybill Number: 905369.\n \n \nAfter the successful payment of Ksh.49/- to m-pesa kindly click on Login Now button below"
+        android:textAlignment="center"
+        android:textSize="@dimen/show_text_views_meduim"
+        app:fontName="@string/fontfilename" />
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/paybill"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/show_text_views_meduim"
+        app:fontName="@string/fontfilename"
+        android:gravity="center"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/account_dialog_disp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Your Account No : "
+        android:textIsSelectable="true"
+        android:textSize="@dimen/show_text_views_meduim"
+        app:fontName="@string/fontfilename"
+        android:gravity="center"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="20dp"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/show_text_views_meduim"
+        app:fontName="@string/fontfilename"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+
+    <com.mymatatu.Global.ButtonExoSemiBold
+        android:id="@+id/button_next_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@color/buttoncol"
+        android:text="Login Now"
+        android:textColor="@color/whitetext"
+        app:fontName="@string/fontfilename" />
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontName="@string/fontfilename"
+                android:textSize="@dimen/show_text_views_meduim"
+                android:layout_margin="20dp"
+                android:paddingTop="30dp"/>
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/call_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/show_text_views_large"
+                app:fontName="@string/fontfilename"
+                android:text="Call us : +254-0123456789"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

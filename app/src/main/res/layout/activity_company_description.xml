@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_company_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.anonymous.mymatatu_final.com.mymatatu_final.appdecsiptionscreen.controller.AppDescriptionActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_laytout">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/bottom_laytout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/standard_margin">
+
+
+        <com.mymatatu.Global.TextViewExoSemiBold
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/standard_margin"
+            app:fontName="@string/fontfilename"
+            android:textColor="@color/search_header"
+            android:text="@string/skip"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/next"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/skip">
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/standard_margin"
+                app:fontName="@string/fontfilename"
+                android:background="@drawable/selected_dot"/>
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/indicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:padding="@dimen/standard_margin"
+                app:fontName="@string/fontfilename"
+                android:layout_toRightOf="@+id/indicator1"
+                android:background="@drawable/default_dot"/>
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/indicator3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:padding="@dimen/standard_margin"
+                app:fontName="@string/fontfilename"
+                android:layout_toRightOf="@+id/indicator2"
+                android:background="@drawable/default_dot"/>
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/indicator4"
+                android:layout_toRightOf="@+id/indicator3"
+                android:padding="@dimen/standard_margin"
+                app:fontName="@string/fontfilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:background="@drawable/default_dot"/>
+
+
+        </RelativeLayout>
+
+
+
+        <com.mymatatu.Global.TextViewExoSemiBold
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/standard_margin"
+            app:fontName="@string/fontfilename"
+            android:textColor="@color/search_header"
+            android:text="@string/next_text"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

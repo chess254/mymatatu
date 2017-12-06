@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/oldpasswordlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextrectangle">
+
+        <com.mymatatu.Global.EditTextExoSemiBold
+            android:id="@+id/old_password_change"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="Old Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textAlignment="viewStart"
+            android:textColorLink="@color/buttoncol"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/editext_font"
+            app:fontName="@string/fontfilename" />
+
+        <ImageView
+            android:id="@+id/old_password_show"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/password_show" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forgetpasswordlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/oldpasswordlayout"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextrectangle">
+
+        <com.mymatatu.Global.EditTextExoSemiBold
+            android:id="@+id/password_change"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="Change Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textAlignment="viewStart"
+            android:textColorLink="@color/buttoncol"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/editext_font"
+            app:fontName="@string/fontfilename" />
+
+        <ImageView
+            android:id="@+id/password_show_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/password_show" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirmforgetpasswordlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/forgetpasswordlayout"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextrectangle">
+
+        <com.mymatatu.Global.EditTextExoSemiBold
+            android:id="@+id/confirm_password_change"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textAlignment="viewStart"
+            android:textColorLink="@color/buttoncol"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/editext_font"
+            app:fontName="@string/fontfilename" />
+
+        <ImageView
+            android:id="@+id/confirm_password_show_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/password_show" />
+
+    </RelativeLayout>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/oldpassworderror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oldpasswordlayout"
+        android:visibility="gone"
+        app:fontName="@string/fontfilename"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/passworderror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgetpasswordlayout"
+        android:visibility="gone"
+        app:fontName="@string/fontfilename"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/confirmpassworderror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmforgetpasswordlayout"
+        android:visibility="gone"
+        app:fontName="@string/fontfilename"/>
+
+
+    <Button
+        android:id="@+id/change_password_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmforgetpasswordlayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/buttoncol"
+        android:text="Next"
+        android:textColor="@color/whitetext" />
+
+
+</RelativeLayout>

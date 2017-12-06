@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context="com.example.anonymous.mymatatu_final.com.mymatatu_final.appdecsiptionscreen.controller.AppDescriptionActivity">
+
+
+
+    <ImageView
+        android:id="@+id/desciptionimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:src="@drawable/appsplash"/>
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+
+        android:id="@+id/boldtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:fontName="@string/fontfilename"
+        android:text="search"
+        android:layout_margin="@dimen/standard_margin"
+        android:textColor="@color/search_header"
+        android:textSize="@dimen/search_header_size"
+        android:layout_below="@+id/desciptionimageview"
+        android:layout_centerHorizontal="true"
+         />
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My app desciption"
+        android:gravity="center"
+        android:textSize="@dimen/decsription_header"
+        android:layout_below="@+id/boldtext"
+        android:textColor="@color/description_app"
+        app:fontName="@string/fontfilename"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/margin_app_description"
+        android:layout_marginRight="@dimen/margin_app_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/standard_margin" />
+
+
+
+</RelativeLayout>

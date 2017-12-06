@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_40"
+            android:layout_marginRight="@dimen/size_40"
+            android:orientation="vertical">
+
+            <!--<TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Wallet Activity"
+                android:textAlignment="center" />-->
+
+
+            <!--  <TextViewExoSemiBold
+                  android:id="@+id/wallet_balance_data"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/size_10"
+                  android:layout_marginTop="@dimen/size_50"
+                  android:gravity="center"
+                  android:text="TextView"
+                  android:textSize="@dimen/text_18"
+                  android:textStyle="bold"
+                  app:fontName="@string/fontfilename" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30"
+                android:background="@drawable/dottedline"
+                android:orientation="horizontal">
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:text="Wallet \nBalance"
+                    android:paddingLeft="@dimen/size_10"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/heading"
+                    app:fontName="@string/fontfilename" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/bal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_20"
+                        android:text="1000 "
+                        android:gravity="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/heading"
+                        app:fontName="@string/fontfilename" />
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(Kenyan Shillings)"
+                        android:gravity="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/sourcedestination_size"
+                        app:fontName="@string/fontfilename" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_20"
+                android:text="Transfer Money"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/text_18"
+                app:fontName="@string/fontfilename" />
+
+
+            <!-- <TextView
+                 android:id="@+id/textView19"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="10dp"
+                 android:text="Send Money"
+                 android:textAlignment="center" />-->
+
+            <com.mymatatu.Global.EditTextExoSemiBold
+                android:id="@+id/wallet_mobile_no_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/_254"
+                android:drawablePadding="@dimen/size_10"
+                android:ems="10"
+                android:hint="Enter the Mobile No"
+                android:inputType="number"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.EditTextExoSemiBold
+                android:id="@+id/wallet_amount_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Enter the Amount"
+                android:inputType="number"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.ButtonExoSemiBold
+                android:id="@+id/wallet_send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@android:color/holo_red_dark"
+                android:text="Make Transfer"
+                android:textColor="@color/white"
+                app:fontName="@string/fontfilename" />
+
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_50"
+                android:text="Transfer History"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/text_18"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/error_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="No transfer history"
+                android:visibility="gone"
+                app:fontName="@string/fontfilename" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_10">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profilemenu_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/nameholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Name"
+                android:textColor="@color/buttoncol"
+                android:textSize="@dimen/editext_font"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.EditTextExoSemiBold
+                android:id="@+id/profile_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/nameholder"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextrectangle"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/phoneholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_name"
+                android:layout_marginBottom="5dp"
+                android:text="Mobile Number"
+                android:textColor="@color/buttoncol"
+                android:textSize="@dimen/editext_font"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/phone_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/phoneholder"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextrectangle"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                app:fontName="@string/fontfilename" />
+
+            <!--<TextViewExoSemiBold-->
+            <!--android:id="@+id/passwordholder"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/phone_edit_profile"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Password"-->
+            <!--android:textColor="@color/buttoncol"-->
+            <!--android:textSize="@dimen/editext_font"-->
+            <!--app:fontName="@string/fontfilename" />-->
+
+            <!--<TextViewExoSemiBold-->
+            <!--android:id="@+id/password_data"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@id/passwordholder"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/edittextrectangle"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="10dp"-->
+            <!--app:fontName="@string/fontfilename"-->
+            <!--tools:inputType="textPassword" />-->
+
+            <!--<TextViewExoSemiBold-->
+            <!--android:id="@+id/changepassword"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/password_data"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:gravity="right"-->
+            <!--android:text="Change Password"-->
+            <!--android:textColor="#828282"-->
+            <!--app:fontName="@string/fontfilename" />-->
+
+            <!--<TextViewExoSemiBold-->
+            <!--android:id="@+id/nextofkinholder"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/changepassword"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Id Number of Next of Kin"-->
+            <!--android:textColor="@color/buttoncol"-->
+            <!--android:textSize="@dimen/editext_font"-->
+            <!--app:fontName="@string/fontfilename" />-->
+
+            <!--<TextViewExoSemiBold-->
+            <!--android:id="@+id/nextofkin_data"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@id/nextofkinholder"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/edittextrectangle"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="10dp"-->
+            <!--app:fontName="@string/fontfilename" />-->
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/countyholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_edit_profile"
+                android:layout_marginBottom="5dp"
+                android:text="County"
+                android:textColor="@color/buttoncol"
+                android:textSize="@dimen/editext_font"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.AutoCompleteExoSemiBold
+                android:id="@+id/profile_edit_county"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/countyholder"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextrectangle"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/cityholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_edit_county"
+                android:layout_marginBottom="5dp"
+                android:text="City"
+                android:textColor="@color/buttoncol"
+                android:textSize="@dimen/editext_font"
+                app:fontName="@string/fontfilename" />
+
+            <com.mymatatu.Global.AutoCompleteExoSemiBold
+                android:id="@+id/profile_edit_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/cityholder"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/edittextrectangle"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                app:fontName="@string/fontfilename" />
+
+            <Button
+                android:id="@+id/edit_done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_edit_city"
+                android:background="@color/buttoncol"
+                android:text="Save"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/edit_image_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil_edit_button"
+        app:srcCompat="@drawable/pencil_edit_button" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/app_bar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_photo" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_20">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:id="@+id/linearlayoutheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Date"
+                        app:fontName="@string/fontfilename"
+                        android:textSize="@dimen/show_text_views_meduim"
+                        android:textColor="@color/white"/>
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Booking Id"
+                        app:fontName="@string/fontfilename"
+                        android:textSize="@dimen/show_text_views_meduim"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/date_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        app:fontName="@string/fontfilename"
+                        android:textSize="@dimen/show_text_views_meduim"
+                        android:textColor="@color/white"/>
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/pd_booking_id_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        app:fontName="@string/fontfilename"
+                        android:textSize="@dimen/show_text_views_meduim"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearlayoutheading"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="From"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="To"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Sacco Name"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Matatu No"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Selected seat(s)"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Number of seat(s)"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Insurance"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Total Cost"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_from_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_to_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_sacco_name_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_matatu_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_totalseats_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_seat_nos_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+                <com.mymatatu.Global.TextViewExoSemiBold
+                    android:id="@+id/pd_total_cost_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    app:fontName="@string/fontfilename"
+                    android:textSize="@dimen/show_text_views_meduim"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

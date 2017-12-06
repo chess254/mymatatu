@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_toLeftOf="@+id/register_btn"
+        android:text="All Sync Contacts"
+        android:layout_marginBottom="@dimen/size_10"
+        app:fontName="@string/fontfilename" />
+
+    <com.mymatatu.Global.TextViewExoSemiBold
+        android:id="@+id/nosycn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/register_btn"
+        android:text="No Sync Contacts"
+        app:fontName="@string/fontfilename" />
+
+    <ListView
+        android:id="@+id/listview_synced_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"><!--
+        android:layout_marginBottom="50dp"-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/seatingtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dottedline"
+                    android:padding="10dp">
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView5"
+                        android:layout_marginTop="5dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/buttoncol"
+                        app:fontName="@string/fontfilename" />
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/seatingmatatuname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/timer"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/greydrak"
+                        android:textSize="@dimen/show_text_views_meduim"
+                        app:fontName="@string/fontfilename" />
+
+                    <com.mymatatu.Global.TextViewExoSemiBold
+                        android:id="@+id/seatingroutename"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seatingmatatuname"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/greydrak"
+                        android:textSize="@dimen/show_text_views_small"
+                        app:fontName="@string/fontfilename" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/seatingroutename"
+                        android:gravity="center_horizontal">
+
+                        <com.mymatatu.Global.TextViewExoSemiBold
+                            android:id="@+id/seatingseatsavailalbe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/seatingroutename"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/show_text_views_small"
+                            app:fontName="@string/fontfilename" />
+
+                        <com.mymatatu.Global.TextViewExoSemiBold
+                            android:id="@+id/seatingcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seatingroutename"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/seatingseatsavailalbe"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/show_text_views_small"
+                            app:fontName="@string/fontfilename" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:layout_below="@+id/seatingtitle"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:paddingBottom="-50dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="4">
+
+                        <ToggleButton
+                            android:id="@+id/seat2"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat2"
+                            android:checked="false"
+                            android:tag="2"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat1"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat1"
+                            android:tag="1"
+                            android:textSize="0dp" />
+
+                        <ImageView
+                            android:id="@+id/noseat1"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/no_input"
+                            android:textOff=""
+                            android:textOn=""
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/steering"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/steering_icon"
+                            android:textOff=""
+                            android:textOn=""
+                            android:textSize="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/noseat2"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/no_input"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <ImageView
+                            android:id="@+id/noseat3"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/no_input"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <ToggleButton
+                            android:id="@+id/seat4"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat4"
+                            android:tag="4"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat3"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat3"
+                            android:tag="3"
+                            android:textSize="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/noseat4"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/no_input"
+                            android:textOff=""
+                            android:textOn=""
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat7"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat7"
+                            android:tag="7"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat6"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat6"
+                            android:tag="6"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat5"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat5"
+                            android:tag="5"
+                            android:textSize="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/noseat5"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/no_input"
+                            android:textOff=""
+                            android:textOn=""
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat10"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat10"
+                            android:tag="10"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat9"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat9"
+                            android:tag="9"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat8"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat8"
+                            android:tag="8"
+                            android:textSize="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="4">
+
+                        <ToggleButton
+                            android:id="@+id/seat14"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat14"
+                            android:tag="14"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat13"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat13"
+                            android:tag="13"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat12"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat12"
+                            android:tag="12"
+                            android:textSize="0dp" />
+
+                        <ToggleButton
+                            android:id="@+id/seat11"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wseat11"
+                            android:tag="11"
+                            android:textSize="0dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ll1"
+                    android:layout_margin="10dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Seats" />
+
+                                <TextView
+                                    android:id="@+id/seat_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="10dp" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/confirm_booking"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="2"
+                                android:background="#CF000F"
+                                android:text="Done"
+                                android:textColor="#fff" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet2"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/demo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="2dp"
+                app:tabTextColor="@android:color/white" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/demo_pager"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sheet_p2"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/long_latin"
+            android:padding="16dp"
+            android:textSize="16sp"/>
+    </LinearLayout>-->
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

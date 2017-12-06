@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navbarheader"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:layout_weight="1"
+    android:background="@color/buttoncol"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingBottom="10dp"
+            >
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/navbar_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Parth Kamdar"
+                android:textSize="@dimen/show_text_views_large"
+                android:textStyle="bold"
+                app:fontName="@string/fontfilename"
+                android:textColor="@color/white"/>
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/navbar_KES"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/navbar_name"
+                android:layout_weight="1"
+                android:text="KSh."
+                android:textSize="@dimen/show_text_views_large"
+                android:textStyle="bold"
+                app:fontName="@string/fontfilename"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/navbar_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbar_KES"
+                android:layout_toRightOf="@id/navbar_phone"
+                android:layout_weight="2"
+                android:text="+254-123456789"
+                android:textSize="@dimen/show_text_views_small"
+                android:textStyle="bold"
+                app:fontName="@string/fontfilename"
+                android:textColor="@color/white"/>
+
+            <com.mymatatu.Global.TextViewExoSemiBold
+                android:id="@+id/navbar_wallet_balace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/navbar_name"
+                android:layout_weight="1"
+                android:text="----"
+                android:textColor="@color/white"
+                android:textSize="@dimen/show_text_views_small"
+                android:textStyle="bold"
+                app:fontName="@string/fontfilename" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
